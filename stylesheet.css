@@ -1,0 +1,115 @@
+/***************************************/
+h1 {
+	color: lightblue;			/* カラーを指定 */
+	font-size: 10px;		/*	文字の大きさを変更 */
+	font-family: serif;	/* 文字の種類を変更 */
+	font-weight: bold;	/* 文字の太さを変更 (normal, bold) */
+	width: 500px;			/* 横幅を変更 */
+	height: 80px;			/* 高さを変更 */
+
+	background-color: #ffd800;	/* 背景色を変える */
+	background-image:url(https://prog-8.com/images/html/advanced/top.png);	/* 背景画像を挿入 (表示範囲を埋める) */
+	background-size:cover;			/* 一枚の画像で表示範囲を埋める */
+	opacity: 0.7;								/* 透明度 (1から下がるほど透明) */
+	letter-spacing: 5px;				/* 文字の間隔 */
+	transition: all 2s;					/* アニメーションの追加 (変化の対象, 変化に係る時間) */
+	line-height: 20px;					/* 行の高さを指定 */
+
+}
+
+h1 :hover {
+	background-color: rgba(255, 255, 0, 0.3);	/* 色=rgb, 透明度=aで指定 */
+}
+
+/***************************************/
+/* 「,」で複数のセレクタを指定 */
+p, span {
+	color: #0000ff; /* カラーを指定 */
+	font-family: "Avenir Next"; /* 文字の種類を変更 ※fontにスペースがある場合は""で囲む */
+}
+
+img {
+	width: 250;
+	height: 180;
+}
+
+.learn {
+	width: 1200px;
+	height: 800px;
+}
+
+/***************************************/
+
+li {
+	color: red;	/* 全リスト項目を色づける */
+
+}
+
+.header-list li {
+	color: black;
+	list-style: none;	/* リスト先頭のマークを削除 */
+	float: left;			/* 指定した要素を横並びにする */
+	border: 5px solid red; 				/* 枠線 (太さ、種類、色) */
+	border-top: 5px solid red; 		/* 枠線 (余白と記述は一緒) */
+	border-radius: 10px;					/* 角を丸める */
+	padding: 20px;				/* 余白 (上下左右) */
+	padding-top: 20px;		/* 余白 (上) */
+	padding-bottom: 20px;	/* 余白 (下) */
+	padding-left: 20px;		/* 余白 (左) */
+	padding-right: 20px;	/* 余白 (右) */
+	padding: 20px 10px 20px 10px; /* 余白 (時計回り/上右下左) */
+	padding: 20px 10px;						/* 余白 (上 + 下) (右 + 左) */
+	padding: 40px;								/* 枠線の内側に余白 */
+	margin: 40px;									/* 枠線の外側に余白 */
+	/* セット (margin auto) */
+	margin: 0 auto;								/* 中央寄せ (上下に0, 左右にautoを指定) */
+	width: 300px;
+	/* ※ 上下にautoは指定できない */
+	/* ボックスモデル → borderを基準に外側(margin)、
+	　 内側(padding)で構成するデザイン */
+	text-align: center;						/* テキスト等の配置を指定 (left, center, right) */
+	/*  */
+}
+
+/* リストをリストのまま右に移動 */
+.footer-list {
+	float: right;
+}
+
+/***************************************/
+
+/* divに適用 */
+.header {
+	color: red;
+	background-color: yellow;
+	height: 300px;
+}
+
+.main {
+	background-color: firebrick;
+	height: 100px;
+}
+
+.fa {
+	margin: 20px ;
+}
+
+/* 子要素の設定 */
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+/***************************************/
+/* 要素を重ねて表示 */
+.box1 {
+	position: absolute;
+	top: 50px;
+	left: 70px;
+}
+
+.box2 {
+	position: absolute;
+	top: 120px;
+	left: 140px;
+}
